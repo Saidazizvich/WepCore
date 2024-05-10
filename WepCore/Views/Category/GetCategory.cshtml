@@ -1,0 +1,23 @@
+﻿@model WepCore.Models.Entities.Category
+
+@{
+    ViewData["Title"] = "GetCategory";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>GetCategory</h1>
+
+<form method="post" asp-action="GetCategory">
+    <div class="row">
+         <input type="text" asp-for="CategoryName" placeholder="Category ismini yaz" / >
+</div>
+<br />
+<div class="row">
+    <textarea asp-for="Descripation" typeof="text" placeholder="burasi esa aciklama yaz"></textarea>
+</div>
+<br />
+<div>
+    <button type="submit" class="btn btn-success">Category Add</button>
+</div>
+<br />
+</form>
